@@ -1,0 +1,11 @@
+/* ============================================================
+   Diestra — Fonts
+   Brand fonts (per client direction, Jun 2026):
+   • Display / serif: "Quattrocento" — an old-style Garalde serif,
+     used for titles & pull-quotes (replaces the earlier Playfair
+     stand-in for the bespoke "Diestra Display").
+   • Sans / UI: "Google Sans Flex" — expressive business sans for
+     all headings-as-UI, body, labels and the logo wordmark.
+   Both served from Google Fonts; Inter / system stacks fall back.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@300..800&family=Quattrocento:wght@400;700&display=swap');

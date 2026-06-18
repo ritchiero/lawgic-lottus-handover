@@ -1,0 +1,57 @@
+/* ============================================================
+   Diestra — base element styling & brand utilities
+   Light-touch resets that make raw HTML look on-brand, plus a
+   few helper classes used across cards, kits and slides.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "cv11", "ss01";
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; color: var(--text-heading); line-height: var(--lh-heading); }
+
+/* Display serif — titles & pull quotes */
+.dx-display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--text-heading);
+}
+
+/* UI headings use Inter semibold */
+.dx-h1 { font: var(--fw-semibold) var(--fs-h1)/var(--lh-snug) var(--font-sans); letter-spacing: var(--ls-tight); }
+.dx-h2 { font: var(--fw-semibold) var(--fs-h2)/var(--lh-snug) var(--font-sans); letter-spacing: var(--ls-tight); }
+.dx-h3 { font: var(--fw-semibold) var(--fs-h3)/var(--lh-heading) var(--font-sans); }
+
+.dx-body { font-size: var(--fs-body); line-height: var(--lh-relaxed); color: var(--text-body); }
+.dx-muted { color: var(--text-muted); }
+
+/* Eyebrow / section label — uppercase, wide tracking */
+.dx-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Brand gradient fills */
+.dx-gradient { background: var(--gradient-marca); }
+.dx-gradient-soft { background: var(--gradient-soft); }
+
+/* Tabular numbers for data */
+.dx-tnum { font-variant-numeric: tabular-nums; }
+
+::selection { background: var(--lila-suave); color: var(--azul-profundo); }

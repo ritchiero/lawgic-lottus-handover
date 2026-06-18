@@ -1,0 +1,91 @@
+/* ============================================================
+   Diestra — Color system
+   Base brand palette + semantic aliases.
+   Brand law: deep navy & graphite anchor; pastels (mint, bruma,
+   lila) are calm support; lime is the single energetic accent —
+   used sparingly for CTAs, "new", progress.
+   ============================================================ */
+:root {
+  /* ---- Base palette (brand-named) ---- */
+  --azul-profundo: #0B1D3A;   /* primary brand navy */
+  --grafito:       #0F1115;   /* near-black ink */
+  --blanco:        #FFFFFF;
+  --menta-suave:   #C8F2E6;   /* soft mint */
+  --azul-bruma:    #D6E6FF;   /* misty blue */
+  --lila-suave:    #CDBCF7;   /* soft lilac */
+  --lima-acento:   #D6F56A;   /* lime accent */
+
+  /* ---- Navy ramp (derived, for depth & hovers) ---- */
+  --navy-900: #060F1F;
+  --navy-800: #0B1D3A;
+  --navy-700: #122846;
+  --navy-600: #1C3357;
+  --navy-500: #2A3D63;
+
+  /* ---- Cool neutral ramp (navy-tinted greys) ---- */
+  --neutral-0:   #FFFFFF;
+  --neutral-50:  #F6F8FB;
+  --neutral-100: #EEF2F7;
+  --neutral-200: #E2E8F0;
+  --neutral-300: #D5DDE8;
+  --neutral-400: #B4BFD0;
+  --neutral-500: #8A97AD;
+  --neutral-600: #6B7891;
+  --neutral-700: #4A566E;
+  --neutral-800: #2A3550;
+  --neutral-900: #16213A;
+
+  /* ---- Soft accent tints (for fills/wash backgrounds) ---- */
+  --mint-bg:  #E4F8F1;
+  --bruma-bg: #EBF2FF;
+  --lila-bg:  #EDE6FC;
+  --lime-bg:  #F0FAC9;
+
+  /* ---- Semantic surfaces ---- */
+  --surface-page:    var(--blanco);
+  --surface-subtle:  var(--neutral-50);
+  --surface-card:    var(--blanco);
+  --surface-raised:  var(--blanco);
+  --surface-inverse: var(--azul-profundo);
+  --surface-ink:     var(--grafito);
+  --surface-wash:    var(--mint-bg);
+
+  /* ---- Semantic text ---- */
+  --text-heading:  var(--azul-profundo);
+  --text-body:     var(--neutral-800);
+  --text-muted:    var(--neutral-600);
+  --text-subtle:   var(--neutral-500);
+  --text-inverse:  var(--blanco);
+  --text-on-accent: var(--azul-profundo); /* navy text on lime */
+  --text-link:     var(--azul-profundo);
+
+  /* ---- Semantic borders ---- */
+  --border-subtle:  var(--neutral-200);
+  --border-default: var(--neutral-300);
+  --border-strong:  var(--azul-profundo);
+  --border-inverse: rgba(255,255,255,0.16);
+
+  /* ---- Accent roles ---- */
+  --accent:          var(--azul-profundo);
+  --accent-lime:     var(--lima-acento);
+  --accent-mint:     var(--menta-suave);
+  --accent-bruma:    var(--azul-bruma);
+  --accent-lila:     var(--lila-suave);
+
+  /* ---- Status (muted, professional) ---- */
+  --positive:    #1F8A5B;
+  --positive-bg: #E3F4EC;
+  --negative:    #C0453B;
+  --negative-bg: #FBE9E7;
+  --notice:      #B7791F;
+  --notice-bg:   #FBF1DC;
+
+  /* ---- Brand gradient (mint → bruma → lila → lime) ---- */
+  --gradient-marca: linear-gradient(105deg, #C8F2E6 0%, #D6E6FF 36%, #CDBCF7 64%, #D6F56A 100%); /* @kind color */
+  --gradient-soft:  linear-gradient(135deg, #E4F8F1 0%, #EBF2FF 50%, #EDE6FC 100%); /* @kind color */
+  --gradient-ink:   linear-gradient(135deg, #0B1D3A 0%, #122846 60%, #1C3357 100%); /* @kind color */
+
+  /* ---- Focus ring ---- */
+  --focus-ring: 0 0 0 3px rgba(11,29,58,0.16);
+  --focus-ring-lila: 0 0 0 3px rgba(205,188,247,0.55);
+}
